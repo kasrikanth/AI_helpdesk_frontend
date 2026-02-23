@@ -6,7 +6,7 @@
 import axios from 'axios';
 import { getAccessToken } from './auth';
 
-const API_BASE_URL = import.meta.env.BACKEND_API_BASE_URL || 'https://a1ff-49-207-196-60.ngrok-free.app';
+const API_BASE_URL = import.meta.env.BACKEND_API_BASE_URL || 'https://ai-helpdesk-system-vas2.onrender.com';
 const API_TIMEOUT = parseInt(import.meta.env.BACKEND_API_TIMEOUT || '20000');
 
 const apiClient = axios.create({
