@@ -393,7 +393,7 @@ const TicketDashboard = () => {
                 <TableCell sx={{ color: '#ffffff', maxWidth: '200px' }}>
                   <Typography variant="body2">{ticket.title}</Typography>
                   <Typography variant="caption" sx={{ color: '#999999' }}>
-                    {ticket.created_at}
+                    Support Ticket
                   </Typography>
                 </TableCell>
                 <TableCell>

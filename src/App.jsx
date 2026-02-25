@@ -19,6 +19,8 @@ import ModelVersioning from './components/ModelVersioning';
 import SecurityComplianceDashboard from './components/SecurityComplianceDashboard';
 import DemoScriptNavigator from './components/DemoScriptNavigator';
 import LoginAuth from './components/Login_Auth';
+import MetricsDashboard from './components/DashboardMetrics';
+
 
 // Role-based access control configuration
 const rolePermissions = {
@@ -243,6 +245,16 @@ function AppRoutes() {
         element={
           <RoleProtectedRoute path="/security">
             <SecurityComplianceDashboard />
+          </RoleProtectedRoute>
+        }
+      />
+
+      {/* Dashboard Metrics */}
+      <Route
+        path="/dashboard-metrics"
+        element={
+          <RoleProtectedRoute path="/dashboard-metrics">
+            <MetricsDashboard />
           </RoleProtectedRoute>
         }
       />
