@@ -1,10 +1,13 @@
 /* Remove padding and width constraints so full-width layouts work correctly */
+/* ── Root container ───────────────────────────────────────── */
 #root {
   width: 100%;
   min-height: 100vh;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
